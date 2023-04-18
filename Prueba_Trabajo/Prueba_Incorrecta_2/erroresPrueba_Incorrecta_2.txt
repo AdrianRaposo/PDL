@@ -1,0 +1,5 @@
+Error  24 (semántico) en linea 4: Para realizar una suma aritmetica los tipos de las expresiones tienen que ser iguales y de tipo entero.
+Error  1 (léxico) en linea 6: El analizador no reconoce el caracter leido.
+Error  1 (léxico) en linea 6: El analizador no reconoce el caracter leido.
+Error  22 (semántico) en linea 7: Para realizar un AND lógico los tipos de las expresiones tienen que ser iguales  y de tipo lógico.
+Error  16 (semántico) en linea 7: La expresión dentro del while debe ser de tipo lógico.

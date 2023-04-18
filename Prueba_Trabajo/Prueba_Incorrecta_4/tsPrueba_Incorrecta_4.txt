@@ -1,0 +1,40 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'b1'
+  Atributos :
+  + tipo : 'logico'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'suma'
+  Atributos :
+  + tipo : 'funcion'
+  + numParam : 2
+  + tipoParam1 : 'entero'
+  + tipoParam2 : 'entero'
+  + tipoRetorno : 'entero'
+  + etiqFuncion : 'funcion1'
+  --------- ----------
+* LEXEMA : 'varglobal'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 1
+  --------- ----------
+* LEXEMA : 'fin'
+  Atributos :
+  + tipo : ''
+  + despl : 
+  + tipo : 'null'
+  + despl : -1
+  --------- ----------
+CONTENIDOS DE LA TABLA LOCAL # 2 : 
+
+* LEXEMA : 'n1'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'n2'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 1
+  --------- ----------

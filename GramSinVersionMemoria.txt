@@ -1,0 +1,55 @@
+Terminales = { boolean do function if input int let print return string while cte_entera cadena("") ID += = , ; ( ) { } + && == false true EOF }
+NoTerminales = { P0 P F H A K C B S S1 X L Q E E1 R R1 U U1 V V1 T }
+Axioma = P0
+Producciones = {
+P0 -> P  //// 1
+P -> B P //// 2
+P -> F P //// 3
+P -> EOF //// 4
+F -> function ID H ( A ) { C } //// 5
+H -> T //// 6
+H -> lambda //// 7 
+A -> T ID K //// 8
+A -> lambda //// 9
+K -> , T ID K //// 10
+K -> lambda //// 11
+C -> B C //// 12
+C -> lambda //// 13
+B -> if ( E ) S ; //// 14
+B -> let ID T ; //// 15
+B -> do { C } while ( E ) ; //// 16
+B -> S ; //// 17
+S -> ID S1 //// 18
+S -> print E //// 19
+S -> input ID //// 20
+S -> return X //// 21
+S1 -> = E //// 22
+S1 -> ( L ) //// 23
+S1 -> += E //// 24
+X -> E //// 25
+X -> lambda //// 26
+L -> E Q //// 27
+L -> lambda //// 28
+Q -> , E Q //// 29
+Q -> lambda //// 30
+E ->  R E1 //// 31
+E1 -> && R E1 //// 32
+E1 -> lambda //// 33
+R -> U R1 //// 34
+R1 -> == U R1 //// 35
+R1 -> lambda //// 36
+U -> V U1 //// 37
+U1 -> + V U1 //// 38
+U1 -> lambda //// 39
+V -> ID V1 //// 40
+V -> ( E ) //// 41
+V -> cte_entera //// 42
+V -> cadena("") //// 43
+V -> false //// 44
+V -> true //// 45
+V1 -> ( L ) //// 46
+V1 -> lambda //// 47
+T -> int //// 48
+T -> boolean //// 49
+T -> string //// 50
+}

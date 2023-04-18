@@ -1,0 +1,8 @@
+/*Ejemplo Correcto 4*/
+
+let b1 boolean;
+let b2 boolean;
+let n1 int;
+let n2 int;
+if((n1+3)==n2 && b1)
+         b2=false;

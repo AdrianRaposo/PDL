@@ -1,0 +1,7 @@
+/*Ejemplo Incorrecto 5*/
+let cad string;
+cad="Cadena de texto de mas de 64 caracteres que debria dar error al crear el token" ;
+cad="Hola";
+if(true)
+   print (cad);
+let n1 int

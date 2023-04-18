@@ -1,0 +1,7 @@
+/*Ejemplo Incorrecto 2*/
+let n1 int;
+let b1 boolean;
+n1=5+b1;
+do{
+	n1= n1 --;
+}while(5 && b1);

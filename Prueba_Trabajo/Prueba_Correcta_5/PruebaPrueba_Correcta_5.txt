@@ -1,0 +1,10 @@
+/*Ejemplo Correcto 5*/
+let n1 int ;
+let n2 int;
+n1=2;
+n2=1;
+function _Funcion (int a, int b, int c){
+          a = b +c ;
+           return;
+}
+_Funcion(varglobal1, n1, n2);

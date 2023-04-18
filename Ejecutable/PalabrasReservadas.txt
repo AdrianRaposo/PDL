@@ -1,0 +1,13 @@
+boolean
+do
+function
+if
+input
+int
+let
+print
+return
+string
+while
+true
+false

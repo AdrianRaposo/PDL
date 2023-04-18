@@ -1,0 +1,6 @@
+Error  20 (semántico) en linea 4: Solo se puede de hacer input de variables de tipo cadena o entero.
+Error  25 (semántico) en linea 8: Argumentos incorrectos en la funcion suma
+Error  3 (léxico) en linea 9: Caracter no esperado, despues de '/' se espera el caracter '*'.
+Error  3 (léxico) en linea 9: Caracter no esperado, despues de '/' se espera el caracter '*'.
+Error  11 (sintáctico) en linea 10: Se esperaba un ; pero se ha recibido un : EOF
+Error  6 (sintáctico) en linea 10: Se esperaba un } pero se ha recibido un : EOF

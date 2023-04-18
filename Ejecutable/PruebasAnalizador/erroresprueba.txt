@@ -1,0 +1,3 @@
+Error  28 (léxico) en linea 4: No se ha cerrado la cadena.
+Error  17 (semántico) en linea 4: Los tipos para hacer un asignación no coinciden.
+Error  11 (sintáctico) en linea 4: Se esperaba un ; pero se ha recibido un : EOF

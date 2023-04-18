@@ -1,0 +1,7 @@
+/*Ejemplo Correcto 3*/
+let b boolean;
+let n int;
+function doble int (int n){
+   n=n+n;
+}
+n=doble(n);

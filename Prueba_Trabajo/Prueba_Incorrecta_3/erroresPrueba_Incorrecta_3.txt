@@ -1,0 +1,4 @@
+Error  19 (semántico) en linea 4: Solo se puede de hacer print de expresiones de tipo cadena o entero.
+Error  21 (semántico) en linea 7: Para hacer una asignación con suma el tipo de la expresión a asignar tiene que ser de tipo entera.
+Error  17 (semántico) en linea 10: Los tipos para hacer un asignación no coinciden.
+Error  12 (sintáctico) en linea 11: Se esperaba un while pero se ha recibido un : ;

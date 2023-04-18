@@ -1,0 +1,6 @@
+/*Ejemplo Correcto 1*/
+let b boolean;
+b=true;
+if(b)
+	varglobal=5;
+print varglobal;

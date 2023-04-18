@@ -1,0 +1,56 @@
+Terminales = { boolean do function if input int let print return string while cte_entera cadena("") ID += = , ; ( ) { } + && == false true EOF }
+NoTerminales = { P0 P F H A K C B S S1 X L Q E E1 R R1 U U1 V V1 T }
+Axioma = P0
+Producciones = {
+P0 -> {TSG=CrearTS(), desplGl=0,zonaDecl=true, TSActual=TSG}P{Destruir TS(TSG)}  //// 1
+P -> B P{} //// 2
+P -> F P{} //// 3
+P -> EOF{} //// 4
+F -> function id {TSL: CrearTS(), TSAct := TSL, despL := 0, insertaEtiTSG(id.pos, nueva_et())}H ( A ) {insertaTipoTS(id.pos, A.tipo(Parametros) --> H.tipo(TipoRetorno))} { C } {if(C.tipo = tipo_error) then Error("Sentencias incorrectas")
+if(C.tipoRet != H.tipo and C.tipoRet != vacío) then Error("Tipo de retorno incorrecto"), DestruirTS(TSL), TSAct := TSG} //// 5
+H -> T {H.tipo:=T.tipo}//// 6
+H -> lambda{H.tipo:=vacio} //// 7 
+A -> T id K {A:= T.tipo x K.tipo, insertarTipoTS(id.pos,T.tipo), insertaDespTS(id.pos, despL),despL := despL + T.ancho}//// 8
+A -> lambda {A.tipo:= tipo_ok} //// 9
+K -> , T id K {K:= T.tipo x K'.tipo, insertarTipoTS(id.pos,T.tipo), insertaDespTS(id.pos, despL),despL:= despL + T.ancho}//// 10
+K -> lambda{K.tipo:=tipo_ok} //// 11
+C -> B C {C.tipo:= if(B.tipo==tipo_ok)then C'.tipo, C.tipoRet:= if(B.tipoRet==C'.tipoRet) then B.tipoRet elseif(B.tipo==vacio) then C'.tipo elseif(C'.tipo==vacio) then B.tipo else tipo_error}//// 12
+C -> lambda {C.tipo:= tipo_ok, C.tipoRet= Vacio}//// 13
+B -> if ( E ) S ;{B.tipo:= if(E.tipo==logico)then S.tipo else error_tipo}  //// 14
+B -> let id T ;{insertaTipoTS( id.pos, T.tipo) if(TSAct = TSG) { insertaDespTS( id.pos, despG),  despG := despG + T.ancho} else { insertaDespTS(id.pos, despL), despL := despL + T.ancho}B.tipo:= tipo_ok//// 15
+B -> do { C } while ( E ) ; {B.tipo:= if(E.tipo==logico)then C.tipo else error_tipo  }//// 16
+B -> S ; {B.tipo:=S.tipo} //// 17
+S -> id S1 {S.tipo := if(S1.tipo == buscaTipoTS(id.pos)) then tipo_ok else tipo_error; S.tipoRet:= vacio}//// 18
+S -> print E {S.tipo := if(E.tipo = {cadena,entero}) then tipo_ok else tipo_error; S.tipoRet:= vacio}//// 19
+S -> input id {S.tipo:= if(buscaTipoTS(id.pos) != tipo_error) then tipo_ok else tipo_error; S.tipoRet:=vacio}//// 20
+S -> return X {S.tipo:= if(X.tipo != error_tipo) then tipo_ok else tipo_error;S.tipoRet:= X.tipo}//// 21
+S1 -> = E {S1.tipo:= if(E.tipo != tipo_error) E.tipo else tipo_error} //// 22
+S1 -> ( L ){S1.tipo:= if(L.tipo != tipo_error) L.tipo else tipo_error} //// 23
+S1 -> += E {S1.tipo:= if(E.tipo = int) then S1.tipo else tipo_error//// 24
+X -> E {X.tipo:= E.tipo} //// 25
+X -> lambda{X.tipo:=Vacio} //// 26
+L -> E Q {L.tipo:= E.tipo x Q.tipo}//// 27
+L -> lambda{L.tipo:= tipo_ok} //// 28
+Q -> , E Q {Q.tipo:= E.tipo x Q'.tipo} //// 29
+Q -> lambda {Q.tipo:= tipo_ok}//// 30
+E ->  R E1 {E.tipo:= if(R.tipo==E1.tipo)then R.tipo else tipo_error}	//// 31
+E1 -> && R E1 {R1:= if((R.tipo==E1'.tipo)={logico})then logico else tipo_error}//// 32
+E1 -> lambda{E1.tipo=tipo_ok} //// 33
+R -> U R1 {R.tipo:= if(U.tipo==entero AND R1.tipo == logico) then logico else if(R1.tipo==tipo_ok) then U.tipo else tipo_error} //// 34
+R1 -> == U R1 {R1:= if((U.tipo==entero AND R1'.tipo== logico))then logico else tipo_error} //// 35
+R1 -> lambda {R1.tipo:= tipo_ok} //// 36
+U -> V U1 {U.tipo:=if(V.tipo==U1.tipo) then V.tipo else tipo_error } //// 37
+U1 -> + V U1 {U1:= if((V.tipo==U1'.tipo)={entero})then V.tipo else tipo_error} //// 38
+U1 -> lambda {U1.tipo:=tipo_ok} //// 39
+V -> id V1 {V.tipo:= {V.tipo := if (buscaTipoTS(id.pos)=V1.tipo)(En el caso de las funciones tipo de lo sparametros) then buscaTipoTS(id.pos)(En el caso de las funciones tipoReturn) else tipo_error}//// 40
+V -> ( E ){V.tipo := if (E.tipo!= tipo_error) then E.tipo else tipo_error}//// 41
+V -> cte_entera {V.tipo:=entero} //// 42
+V -> cadena {V.tipo:=cadena}//// 43
+V -> false {V.tipo:=logico}//// 44
+V -> true {V.tipo:=logico}//// 45
+V1 -> ( L ){V1.tipo:=L.tipo} //// 46
+V1 -> lambda{V1.tipo:=tipo_ok} //// 47
+T -> int {T.tipo:=entero, T.ancho:=1} //// 48
+T -> boolean {T.tipo:=logico, T.ancho:=1} //// 49
+T -> string {T.tipo:=cadena, T.ancho:=64}//// 50
+}

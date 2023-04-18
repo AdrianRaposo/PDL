@@ -1,0 +1,4 @@
+Error  14 (semántico) en linea 5: El tipo de la expresión dentro del if debe ser de tipo lógico. 
+Error  26 (semántico) en linea 7: Tipo de retorno incorrecto en la funcion.
+Error  25 (semántico) en linea 9: Argumentos incorrectos en la funcion _F_u
+Error  11 (sintáctico) en linea 10: Se esperaba un ; pero se ha recibido un : EOF

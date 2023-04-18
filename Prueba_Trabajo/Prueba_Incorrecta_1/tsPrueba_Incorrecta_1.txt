@@ -1,0 +1,22 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'n1'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 0
+  --------- ----------
+* LEXEMA : '_F_u'
+  Atributos :
+  + tipo : 'funcion'
+  + numParam : 1
+  + tipoParam1 : 'logico'
+  + tipoRetorno : 'entero'
+  + etiqFuncion : 'funcion1'
+  --------- ----------
+CONTENIDOS DE LA TABLA LOCAL # 2 : 
+
+* LEXEMA : 'b'
+  Atributos :
+  + tipo : 'logico'
+  + despl : 0
+  --------- ----------

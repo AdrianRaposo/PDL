@@ -1,0 +1,9 @@
+/*Ejemplo Incorrecto 4*/
+let b1 boolean;
+if(b1)
+   input b1;
+function suma int (int n1,int n2){
+   return n1+ n2;
+
+varglobal = suma(varglobal,varglobal,varglobal);
+/ /fin

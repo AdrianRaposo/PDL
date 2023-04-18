@@ -1,0 +1,6 @@
+/*Ejemplo Correcto 2*/
+let b boolean;
+let b2 boolean;
+do{
+   varglobal+=1;
+}while(b && b);

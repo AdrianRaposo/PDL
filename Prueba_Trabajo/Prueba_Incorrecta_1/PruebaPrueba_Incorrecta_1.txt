@@ -1,0 +1,9 @@
+/*Ejemplo Incorrecto 1*/
+let n1 int;
+n1=0;
+function _F_u int (boolean b){
+      if(n1)
+	b=false;
+      return b;
+}
+_F_u(n1)

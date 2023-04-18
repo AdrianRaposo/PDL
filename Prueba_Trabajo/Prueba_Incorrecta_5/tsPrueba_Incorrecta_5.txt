@@ -1,0 +1,14 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'cad'
+  Atributos :
+  + tipo : 'cadena'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'n1'
+  Atributos :
+  + tipo : ''
+  + despl : 
+  + tipo : 'null'
+  + despl : -1
+  --------- ----------

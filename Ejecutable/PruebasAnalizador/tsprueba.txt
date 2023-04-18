@@ -1,0 +1,12 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'x'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'cad'
+  Atributos :
+  + tipo : 'cadena'
+  + despl : 1
+  --------- ----------

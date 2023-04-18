@@ -1,0 +1,12 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'b'
+  Atributos :
+  + tipo : 'logico'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'varglobal'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 1
+  --------- ----------

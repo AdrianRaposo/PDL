@@ -1,0 +1,22 @@
+CONTENIDOS DE LA TABLA GLOBAL # 1 : 
+
+* LEXEMA : 'b1'
+  Atributos :
+  + tipo : 'logico'
+  + despl : 0
+  --------- ----------
+* LEXEMA : 'b2'
+  Atributos :
+  + tipo : 'logico'
+  + despl : 1
+  --------- ----------
+* LEXEMA : 'n1'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 2
+  --------- ----------
+* LEXEMA : 'n2'
+  Atributos :
+  + tipo : 'entero'
+  + despl : 3
+  --------- ----------

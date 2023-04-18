@@ -1,0 +1,11 @@
+/*Ejemplo Incorrecto 3*/
+let n1 int;
+let b1 boolean;
+print(b1);
+input n1;
+if(5==b1)
+    n1+=true;
+do{
+  /*Comentario Correcto*/
+  n1 = "Hola";
+};

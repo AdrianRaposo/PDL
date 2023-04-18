@@ -1,0 +1,2 @@
+Error  4 (léxico) en linea 3: La cadena de caracteres tiene una longitud mayor de 64 caracteres.
+Error  11 (sintáctico) en linea 8: Se esperaba un ; pero se ha recibido un : EOF
