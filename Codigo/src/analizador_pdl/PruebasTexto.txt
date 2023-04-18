@@ -1,0 +1,4 @@
+let x int;
+let cad string;
+cad="hola
+x=5;
